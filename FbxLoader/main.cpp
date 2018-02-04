@@ -25,11 +25,11 @@
 
 #include "FbxLoader/FbxLoader.h"
 
-#define FBX_DATA    "/Users/tomoyafujii/Desktop/Toroid/Toroid.fbx"
+#define FBX_DATA1   "/Users/tomoyafujii/Desktop/Toroid/Toroid.fbx"
 #define FBX_DATA2   "/Users/tomoyafujii/Desktop/testCube.fbx"
 #define FBX_DATA3   "/Users/tomoyafujii/Downloads/Alicia/FBX/Alicia_solid_Unity.FBX"
 #define FBX_DATA4   "/Users/tomoyafujii/Downloads/Wolf Rigged and Game Ready/Wolf_fbx.fbx"
-#define FBX_DATA5   "/Users/tomoyafujii/Downloads/Wolf Rigged and Game Ready/Wolf_with_Animations.fbx"
+#define FBX_DATA    "/Users/tomoyafujii/Downloads/Wolf Rigged and Game Ready/Wolf_with_Animations.fbx"
 #define FBX_DATA6   "/Users/tomoyafujii/Downloads/Black Dragon NEW/Dragon_Baked_Actions_fbx_6.1_ASCII.fbx"
 #define FBX_DATA7   "/Users/tomoyafujii/Downloads/cqfamzdd6ww0-StickFigurea/StickFigurea.FBX"
 #define FBX_DATA8   "/Users/tomoyafujii/Downloads/Low-Poly Spider/Spider.fbx"

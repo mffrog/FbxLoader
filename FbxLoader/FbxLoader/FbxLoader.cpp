@@ -160,6 +160,10 @@ namespace myTools{
          */
 
         void FbxLoader::LoadBone(BoneTreeData& boneTree){
+            if(isBoneTreeInitialized){
+                boneTree = publicBoneTree;
+                return;
+            }
             FbxNode* rootBone = FindRootBone(pScene->GetRootNode());
             if(!rootBone){
                 return ;
@@ -219,6 +223,7 @@ namespace myTools{
                 }
             }
             publicBoneTree = boneTree;
+            isBoneTreeInitialized = true;
         }
         
         
@@ -274,6 +279,11 @@ namespace myTools{
             
             //      差分
             //----------------------------------------------------------------------
+            
+            if(!isBoneTreeInitialized){
+                BoneTreeData tmp;
+                LoadBone(tmp);
+            }
             
             std::vector<PerCpBoneIndexAndWeight> cpWeights(cpCount);
             if(skinCount){
